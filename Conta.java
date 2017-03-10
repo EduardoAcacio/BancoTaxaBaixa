@@ -10,7 +10,7 @@ public class Conta {
 		this.id = id;
 		this.agencia = agencia;
 		this.saldo = saldo;
-		this.habilitada = true;
+		this.setHabilitada(true);
 	}
 	Conta(int id, int agencia){
 		this.id=id;
@@ -32,5 +32,13 @@ public class Conta {
 	}
 	public void saque(float valor){
 		this.saldo-=valor;
+	}
+
+	protected boolean isHabilitada() {
+		return habilitada;
+	}
+
+	protected void setHabilitada(boolean habilitada) {
+		this.habilitada = habilitada;
 	}	
 }

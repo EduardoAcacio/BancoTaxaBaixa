@@ -37,7 +37,7 @@ public class Menu extends Agencia {
     }
 	
 	public void exibeMenuCliente(){
-        System.out.println("\t Escolha a opÃ§Ã£o desejada");
+        System.out.println("\t Escolha a opção desejada");
         System.out.println("1 - Depositar");
         System.out.println("2 - Consultar Saldo");
         System.out.println("3 - Sacar");
